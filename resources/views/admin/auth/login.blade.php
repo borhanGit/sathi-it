@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login — Sathi IT CMS</title>
+    <link rel="icon" type="image/png" href="{{ asset('uploads/logo.png') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,7 @@
     <div class="w-full max-w-md space-y-6">
         <!-- Logo & Branding -->
         <div class="text-center space-y-2">
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-2xl mx-auto shadow-xl shadow-emerald-500/20">
-                S
-            </div>
+            <img src="{{ asset('uploads/logo.png') }}" alt="Sathi IT Logo" class="h-16 w-auto object-contain mx-auto mb-3 drop-shadow-md">
             <h1 class="text-2xl font-black text-white tracking-tight">Sathi IT <span class="text-emerald-400">CMS</span></h1>
             <p class="text-xs text-slate-400">Management Back-Office Portal</p>
         </div>

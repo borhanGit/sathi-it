@@ -6,6 +6,7 @@
     <title>@yield('title', 'Sathi IT — Your Business IT and Growth Partner')</title>
     <meta name="description" content="@yield('meta_description', 'Sathi IT is a complete digital solutions partner for small and medium businesses. We provide custom software, websites, and digital marketing under one roof.')">
     <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="icon" type="image/png" href="{{ asset('uploads/logo.png') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +46,7 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Logo -->
                 <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shadow-md shadow-emerald-900/20 group-hover:scale-105 transition-transform duration-300 border border-slate-700/50">
-                        <span class="font-extrabold text-xl tracking-tight text-emerald-400">S</span>
-                    </div>
+                    <img src="{{ asset('uploads/logo.png') }}" alt="Sathi IT Logo" class="h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                     <div class="flex flex-col">
                         <span class="text-xl font-black tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
                             Sathi <span class="text-emerald-600">IT</span>
@@ -146,11 +145,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
                 <!-- Col 1: Brand Info -->
                 <div class="lg:col-span-2 space-y-4">
-                    <a href="{{ route('home') }}" class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-white">
-                            <span class="font-extrabold text-xl text-emerald-400">S</span>
-                        </div>
-                        <span class="text-2xl font-black tracking-tight text-white">
+                    <a href="{{ route('home') }}" class="flex items-center gap-3 group">
+                        <img src="{{ asset('uploads/logo.png') }}" alt="Sathi IT Logo" class="h-10 w-auto object-contain brightness-110 group-hover:scale-105 transition-transform duration-300">
+                        <span class="text-2xl font-black tracking-tight text-white group-hover:text-emerald-400 transition-colors">
                             Sathi <span class="text-emerald-500">IT</span>
                         </span>
                     </a>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Admin CMS') — Sathi IT Portal</title>
+    <link rel="icon" type="image/png" href="{{ asset('uploads/logo.png') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +20,7 @@
         <div>
             <!-- Sidebar Header -->
             <div class="h-20 flex items-center px-6 border-b border-slate-800 gap-3">
-                <div class="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-black text-lg">
-                    S
-                </div>
+                <img src="{{ asset('uploads/logo.png') }}" alt="Sathi IT Logo" class="h-9 w-auto object-contain">
                 <div>
                     <h1 class="text-white font-bold tracking-tight text-base">Sathi IT <span class="text-emerald-400">CMS</span></h1>
                     <p class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Administration</p>
